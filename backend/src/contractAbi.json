@@ -1,0 +1,56 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "origin", "type": "string" },
+      { "internalType": "string", "name": "ipfsCid", "type": "string" },
+      { "internalType": "address payable", "name": "supplier", "type": "address" }
+    ],
+    "name": "createProduct",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "productId", "type": "uint256" }],
+    "name": "advanceStage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "productId", "type": "uint256" }],
+    "name": "getProduct",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "uint256", "name": "id", "type": "uint256" },
+          { "internalType": "string", "name": "name", "type": "string" },
+          { "internalType": "string", "name": "origin", "type": "string" },
+          { "internalType": "string", "name": "ipfsCid", "type": "string" },
+          { "internalType": "uint256", "name": "amountWei", "type": "uint256" },
+          { "internalType": "address payable", "name": "payer", "type": "address" },
+          { "internalType": "address payable", "name": "supplier", "type": "address" },
+          { "internalType": "uint8", "name": "stage", "type": "uint8" },
+          { "internalType": "bool", "name": "paid", "type": "bool" }
+        ],
+        "internalType": "struct SupplyChainEscrow.Product",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "uint256", "name": "productId", "type": "uint256" },
+      { "indexed": false, "internalType": "string", "name": "name", "type": "string" },
+      { "indexed": false, "internalType": "string", "name": "origin", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "amountWei", "type": "uint256" }
+    ],
+    "name": "ProductCreated",
+    "type": "event"
+  }
+]

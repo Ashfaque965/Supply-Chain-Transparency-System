@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\Enterprise-Level Blockchain Projects\\Supply Chain Transparency System\\contracts\\contracts\\SupplyChainEscrow.sol": {
+      "lastModificationDate": 1771652493049,
+      "contentHash": "73aeb863044c4b358e3dcf066adf5613",
+      "sourceName": "contracts/SupplyChainEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.11 <0.9.0"
+      ],
+      "artifacts": [
+        "SupplyChainEscrow"
+      ]
+    }
+  }
+}
